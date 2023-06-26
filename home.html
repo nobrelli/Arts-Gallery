@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+    	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Home Page</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	
+	<body>
+		<header>
+			<div class="container flex justify-center">
+				<div id="logo">
+					<span>VA</span>
+				</div>
+			</div>
+		</header>
+		<nav id="navbar">
+			<div class="container">
+				<ul class="flex">
+					<li>
+						<a href="handicrafts.html">Handicrafts</a>
+						<div class="dropdown">
+							<div class="container flex">
+								<div class="dropdown-image">
+									<img src="images/handicrafts.png" />
+								</div>
+								<div class="dropdown-details">
+									<p>A handicraft, sometimes more precisely expressed as artisanal handicraft or handmade...</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="painting.html">Painting</a>
+						<div class="dropdown">
+							<div class="container flex">
+								<div class="dropdown-image">
+									<img src="images/painting.png" />
+								</div>
+								<div class="dropdown-details">
+									<p>Painting is the practice of applying paint, pigment, color or other medium to a solid surface...</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="sculpture.html">Sculpture</a>
+						<div class="dropdown">
+							<div class="container flex">
+								<div class="dropdown-image">
+									<img src="images/sculpture.png" />
+								</div>
+								<div class="dropdown-details">
+									<p>Sculpture began fundamentally from hieroglyphics...</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="architecture.html">Architecture</a>
+						<div class="dropdown">
+							<div class="container flex">
+								<div class="dropdown-image">
+									<img src="images/architecture.jpg" width="400" />
+								</div>
+								<div class="dropdown-details">
+									<p>It is one of mankind's most perceptible and enduring forms of articulation, bridging the gap between the past and present...</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="jumbotron left flex justify-center" id="jumbo_home">
+			<div class="container">
+				<h1>Art in the Philippines</h1>
+				<span class="line-separator"></span>
+				<p>The works of art that have developed and accumulated in the Philippines from the beginning of civilization in the country up to the present era.</p>
+			</div>
+		</section>
+		<section class="content">
+			<div class="container flex">
+				<div class="content-left">
+					
+				</div>
+				<div class="content-right">
+					<p>It reflects to its society and non-Filipinos the wide range of cultural influences on the country's culture and how these influences honed the country's arts. The art of the Philippines can be divided into two distinct branches, namely, traditional arts, and non-traditional arts.</p>
+				</div>
+			</div>
+		</section>
+		<section class="jumbotron flex justify-center" id="jumbo_visual">
+			<div class="container">
+				<h1>Visual Arts of the Philippines</h1>
+				<span class="line-separator"></span>
+				<p>Including, but not limited to painting, non-folk sculpture, printmaking, photography, installation art, mixed media works, illustration, graphic arts, performance art, and imaging.</p>
+			</div>
+		</section>
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+			$('#navbar li').hover(function() {
+				$(this).children('.dropdown').fadeToggle();
+			});
+		</script>
+	</body>
+</html>
